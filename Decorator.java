@@ -55,7 +55,7 @@ public class Main
 		
 		
 		Coffee sugarCoffee = new SugarDecorator(new PlainCoffee());
-		System.out.println(sugarCoffee.getPrice() + " # " + milkCoffee.getDescription());
+		System.out.println(sugarCoffee.getPrice() + " # " + sugarCoffee.getDescription());
 		
 		
 		Coffee milkAndSugarCoffee = new SugarDecorator(new MilkDecorator(new PlainCoffee()));
@@ -67,7 +67,7 @@ public class Main
 *************Output****************
 10 # Plain coffee.
 12 # Plain coffee. with Milk
-13 # Plain coffee. with Milk
+13 # Plain coffee. with Sugar
 15 # Plain coffee. with Milk with Sugar
 
 *
